@@ -1,0 +1,145 @@
+body{
+    display: grid;
+    grid-template-columns : 100%;
+}
+
+/* login first page main content  */
+
+.loginFormContentMainPage{
+    display: grid;
+    max-width: 1853;
+    grid-template-rows: repeat(1,minmax(981px,auto));
+    align-items: center;
+    justify-content: center;
+
+}
+.logincontentdesign {
+    display: grid;
+    font-size: 16px;
+    border: 1px solid white;
+    padding: 90px;
+    box-sizing: border-box;
+    box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11),
+    0 5px 15px 0 rgba(0,0,0,0.08);
+    align-items: center;
+    justify-content: center;
+}
+
+.userNameInput { 
+    display: grid;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid gray;
+    padding: 10px 10px 10px 0px ;
+    background-color: transparent;
+}
+.passwordInput { 
+    display: grid;
+    margin-top:5%; 
+    outline: none;
+    border: none;
+    border-bottom: 1px solid gray;
+    padding: 10px 10px 10px 0px ;
+    background-color: transparent;
+}
+
+h1{
+    display: grid;
+    text-align: center;
+}
+
+.RegisterStyle{
+    display: grid;
+    outline: none;
+    border: none;
+    color: blue;
+    background: transparent;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.ForgotPasswordStyle{
+    display: grid;
+    outline: none;
+    border: none;
+    color: blue;
+    background: transparent;
+    cursor: pointer;
+    text-align: right;
+    margin: 10px 0px 10px 10px;
+}
+
+.SubmitButtonStyle{
+    display: grid;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    background-color: blue;
+}
+
+.SubmitButtonStyle:hover{
+    opacity: 0.7;
+    box-shadow:  5px 10px 18px #888888;
+}    
+
+span {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.ReturnHome{
+    display: grid;
+    outline: none;
+    border: none;
+    color: black;
+    background: transparent;
+    cursor: pointer;
+    position: absolute;
+    margin: 20px;
+    padding: 0%;
+    font-size: 50px;
+}
+.ReturnHome::before{
+    font-family: "Font Awesome 5 Free";
+    content: "👈🏿";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+}
+
+@media only screen and (max-width: 1000px){
+
+    .loginFormContentMainPage{
+        display: grid;
+        max-width: 1000px;
+        grid-template-rows: repeat(1,minmax(852px,auto));
+        align-items: center;
+        justify-content: center;
+        background-color: transparent
+    }
+    .logincontentdesign {
+        display: grid;
+        font-size: 14px;
+        border: 1px solid white;
+        padding: 60px;
+        box-sizing: border-box;
+        box-shadow: 0 10px 20px 0 rgba(0,0,0,0.11),
+        0 1px 10px 0 rgba(0,0,0,0.08);
+        align-items: center;
+        justify-content: center;
+    }
+    .ReturnHome{
+        display: grid;
+    }
+    .ReturnHome::before{
+        font-family: "Font Awesome 5 Free";
+        content: "👈🏿";
+        display: inline-block;
+        padding-right: 3px;
+        vertical-align: middle;
+    }
+}

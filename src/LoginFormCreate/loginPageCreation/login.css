@@ -1,0 +1,7 @@
+#my-slider .arrows label {
+    border-left-color: red;
+    border-right-color: red;
+  }
+  #my-slider.inside .navigation label {
+    border: 1px solid red;
+  }
