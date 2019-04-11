@@ -11,6 +11,7 @@ body{
     grid-template-rows: repeat(1,minmax(981px,auto));
     align-items: center;
     justify-content: center;
+    transition: 0.2s;
 
 }
 .logincontentdesign {
@@ -119,7 +120,7 @@ span {
         grid-template-rows: repeat(1,minmax(852px,auto));
         align-items: center;
         justify-content: center;
-        background-color: transparent
+        background-color: transparent;
     }
     .logincontentdesign {
         display: grid;
@@ -134,6 +135,7 @@ span {
     }
     .ReturnHome{
         display: grid;
+        
     }
     .ReturnHome::before{
         font-family: "Font Awesome 5 Free";
