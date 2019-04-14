@@ -1,6 +1,6 @@
 import React from 'react';
-import Login from './loginPageCreation/Login';
-import history from './loginPageCreation/history';
+import Login from './Login';
+import history from './history';
 import {  Router, Route, Switch, withRouter ,Redirect } from "react-router-dom";
 class Password extends React.Component{
 

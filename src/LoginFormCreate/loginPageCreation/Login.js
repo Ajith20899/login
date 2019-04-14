@@ -2,7 +2,7 @@ import React from 'react';
 import './loginCssCode.css';
 import 'semantic-ui-css/semantic.min.css';
 import Register from './Register';
-import Password from '../Password';
+import Password from './Password';
 import history from './history';
 import { Router, Route, Switch, withRouter } from "react-router-dom";
 // import Styled from 'styled-components';
