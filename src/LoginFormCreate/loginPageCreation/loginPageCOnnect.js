@@ -1,27 +1,17 @@
 import React from 'react';
-import Login from './Login';
-import history from './history';
-import {  Router, Route, Switch, withRouter } from "react-router-dom";
-
+import './loginCssCode.css';
+import 'semantic-ui-css/semantic.min.css';
+import history from '../../history'
 class LoginPageConnect extends React.Component{
 
-    loginPageConnect = () => {
-        history.push('/Login')
+    login = () => {
+        history.push('./login');
     }
 
-    render(){
+    render() {
         return(
             <div>
-                <Router history={history}>
-                    <Switch>
-                    <Route exact
-                        strict
-                        path="/Login"
-                        component={withRouter(Login)}
-                    />
-                    </Switch>
-                </Router>
-                <button onClick={this.loginPageConnect}>Login</button>
+                <button className="loginButton" onClick={this.login}>login</button>
             </div>
         )
     }
