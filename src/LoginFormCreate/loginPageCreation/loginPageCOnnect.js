@@ -1,17 +1,15 @@
 import React from 'react';
 import './loginCssCode.css';
 import 'semantic-ui-css/semantic.min.css';
-import history from '../../history'
+import Login from './Login';
 class LoginPageConnect extends React.Component{
-
-    login = () => {
-        history.push('./login');
-    }
 
     render() {
         return(
+
+            // login page call
             <div>
-                <button className="loginButton" onClick={this.login}>login</button>
+                <Login />
             </div>
         )
     }
