@@ -3,7 +3,13 @@ import React from 'react';
 export default class Register extends React.Component {
     render(){
         return (
-            <div> HelloWorld </div>
+            <React.Fragment>
+                <section>
+                    <div>
+                        lkn
+                    </div>
+                </section>
+            </React.Fragment>
         );
     }
 }
