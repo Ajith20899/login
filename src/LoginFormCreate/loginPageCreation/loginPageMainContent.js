@@ -3,13 +3,14 @@ import './loginCssCode.css';
 import history from '../../history';
 import { Icon } from 'semantic-ui-react';
 import Password from "./Password";
-
+import SignUp from './signUp';
 class LoginPageMainContent extends React.Component {
 
     state = {
         icon : false,
         passwordType : 'password',
         password : true,
+        passwordOrsignUp : '',
         emailValue : ''
     }
 
@@ -63,8 +64,16 @@ class LoginPageMainContent extends React.Component {
 
     forgotPassword = () => {
         this.setState({
-            password : !this.state.password
+            password : false,
+            passwordOrsignUp : false
         })
+    }
+
+    signUp = () => {
+        this.setState({
+            password : false,
+            passwordOrsignUp : true
+        },()=> console.log(this.state.passwordOrsignUp))
     }
 
     onChange = (e) => {
@@ -123,10 +132,14 @@ class LoginPageMainContent extends React.Component {
                         </section>
                         </div>
                         </form>
-                    </div>) : 
-                    
+                    </div>) :
+                    (this.state.passwordOrsignUp ? 
+
+                    //signup page
+                    <SignUp/> :    
                     // password main page call
                     <Password/>
+                    )
                 }
                     <div className="loginPageImageDiv">
                     </div>
