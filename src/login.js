@@ -131,7 +131,6 @@ class LoginPage extends React.Component {
             // login page content
 
                 <div className="login">
-                    <section className="image"></section>
                     <section className="loginpageSection">
                     <H2 className="heading">Welcome Back!</H2>
 
@@ -143,7 +142,6 @@ class LoginPage extends React.Component {
 
                         <div className="emailDiv">
                             <LargeInput padding="8px" 
-                            
                                 type="text"
                                 placeholder="Email"
                                 autoComplete="off"
