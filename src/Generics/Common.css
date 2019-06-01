@@ -1,0 +1,204 @@
+ /* navigation bar design */
+
+ html , body {
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  overflow: hidden;
+}
+
+.nav-bar {
+  position: absolute;
+  top: 0%;
+  min-width: 100%;
+  min-height: 100px;
+  background: black;
+  text-align: center;
+}
+
+nav ul {
+  position: relative;
+  margin: auto 0;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 30px;
+  max-width: 500px;
+  min-height: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  text-decoration: none;
+  list-style: none;
+}
+
+nav ul li span {
+  padding-bottom: 6px;
+  position: relative;
+  color: aliceblue;
+  font-size: 24px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: width 0.5s forwards;
+}
+
+nav ul li span::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  bottom: -2px;
+  left: 0%;
+  height: 2px;
+  background: white;
+  transition: width 0.5s;
+}
+nav ul li span:hover::after {
+  width: 100%;
+}
+
+.centerAlignMent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.centerAlignMent p {
+  font-size: 30px;
+}
+
+/* login design */
+
+.login {
+  display: grid;
+  grid-template-columns: repeat(2,1fr); 
+  height: 100vh;
+}
+.image {
+  background: url('image.svg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.loginpageSection {
+  position: absolute;
+  min-width: 400px;
+  top: 30%;
+  left: 63%;
+}
+.heading{
+  margin: 20px 0 25px 0;
+}
+.para {
+  padding: 20px;
+  font-size: 18px;
+  font-family: serif;
+}
+.forgotSpan {
+  padding: 20px 0 0  0;
+  cursor: pointer;
+  text-align: right;
+  font-family: none;
+  font-size: 17px;
+}
+.forgotSpan:hover {
+  color: #582CDB;
+}
+
+.email {
+  margin: 28px 0 0 0;
+  border: 0;
+  border-bottom: 1px solid lightgray;
+  outline: none;
+  width: 100%;
+  font-size: 20px;
+}
+.email::placeholder {
+  color: gray;
+}
+.email:focus  {
+  border-bottom: 1px solid black;
+}
+.email:focus::placeholder {
+  color: transparent
+}
+.email::placeholder {
+  font-family: serif;
+}
+.passwordDiv {
+  position: relative;
+}
+.password {
+  border: 0;
+  border-bottom: 1px solid lightgray;
+  margin: 30px 0 30px 0;
+  outline: none;
+  width: 100%;
+  font-size: 20px;
+  color: gray;
+}
+.password:focus  {
+  border-bottom: 1px solid black;
+}
+
+.password:focus::placeholder {
+  color: transparent
+}
+
+.password::placeholder{
+  font-family: serif;
+}
+
+.Img1 {
+  position: absolute;
+  right: 0;
+  margin-top: -62px;
+  z-index: 999;
+  margin-right: 11px;
+  cursor: pointer;
+}
+
+.paraAndButton {
+  display: block;
+  text-align: center;
+}
+
+.submit {
+  margin: 40px auto 0px auto;
+  font-size: 18px;
+}
+
+.Paragraph {
+  display: inline-flex;
+  margin: 0px auto;
+  min-width: 400px;
+  justify-content: center;
+  padding-top: 20px;
+}
+.para {
+  display: inline-flex;
+  align-items: center;
+  margin: 0px -15px;
+
+}
+.h6 {
+  margin: 20px 0px;
+  padding-left: 0px;
+  cursor: pointer;
+}
+.h6:hover{
+  color: #582CDB;
+}  
+
+
+@media only screen and (max-width: 600px) {
+  .login {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    transform: translate(-50%,-50%)
+  }
+}

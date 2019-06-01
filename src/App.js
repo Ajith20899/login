@@ -4,7 +4,7 @@ import { Router, Route, Switch } from "react-router-dom";
 import Home from './home.js';
 import API from './api.js';
 import Login from './login.js'
-import './nav.css';
+import './Generics/Common.css';
 import 'semantic-ui-css/semantic.min.css';
 
 class App extends React.Component {
